@@ -1,7 +1,7 @@
 puts "Deleting all activities..."
 
 Activity.destroy_all
-Comment.destroy_all
+#Comment.destroy_all
 
 puts "Seeding activities..."
 10.times do
@@ -11,6 +11,7 @@ puts "Seeding activities..."
     )
     5.times do
         Comment.create!(
+            activity: activity,
             content: Faker::Movie.title
         )
     end
