@@ -38,3 +38,8 @@ puts "Seeding activities..."
         title: "Traveling/Vacation",
         image_url: "https://ssl.tzoo-img.com/images/tzoo.1.0.567880.C-vacations-mexico-tulum-istock.jpg?width=1080"
     )
+
+    Comment.create!(
+        content: "I miss drinking with others!",
+        activity_id: Activity.first.id
+    )
