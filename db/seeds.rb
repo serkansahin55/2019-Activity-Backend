@@ -43,3 +43,8 @@ puts "Seeding activities..."
         content: "I miss drinking with others!",
         activity_id: Activity.first.id
     )
+
+    Comment.create!(
+        content: "MR yo I miss dddrinking with others!",
+        activity_id: Activity.first.id
+    )
